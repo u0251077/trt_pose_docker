@@ -61,7 +61,7 @@ export QT_X11_NO_MITSHM=1
 cd /data
 git clone https://github.com/u0251077/trt_pose_docker.git
 cd trt_pose_docker
-sudo python3 setup.py install
+python setup.py install
 ```
 ## Run the example
 [NVIDIA-AI-IOT/trt_pose](https://github.com/NVIDIA-AI-IOT/trt_pose) provide a couple of human pose estimation models pre-trained on the MSCOCO dataset. The throughput in FPS is shown for each platform
