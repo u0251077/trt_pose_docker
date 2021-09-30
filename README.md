@@ -2,8 +2,9 @@
 
 The repo. is built on [NVIDIA-AI-IOT/trt_pose](https://github.com/NVIDIA-AI-IOT/trt_pose).
 
+<img src="https://user-images.githubusercontent.com/4212806/67125332-71a64580-f1a9-11e9-8ee1-e759a38de215.gif" height=256/>
 
-GEFORCE RTX 2070
+GEFORCE RTX 2070</br>
 fps: 30
 
 ## setup docker
