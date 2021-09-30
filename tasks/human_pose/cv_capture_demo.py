@@ -22,10 +22,10 @@ HEIGHT = 224
 data = torch.zeros((1, 3, HEIGHT, WIDTH)).cuda()
 import torch2trt
 
-#model_trt = torch2trt.torch2trt(model, [data], fp16_mode=True, max_workspace_size=1<<25)
+model_trt = torch2trt.torch2trt(model, [data], fp16_mode=True, max_workspace_size=1<<25)
 OPTIMIZED_MODEL = 'resnet18_baseline_att_224x224_A_epoch_249_trt.pth'
 
-#torch.save(model_trt.state_dict(), OPTIMIZED_MODEL)
+torch.save(model_trt.state_dict(), OPTIMIZED_MODEL)
 from torch2trt import TRTModule
 
 model_trt = TRTModule()
