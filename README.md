@@ -1,4 +1,4 @@
-# trt_pose
+# trt_pose_docker 
 
 The repo. is built on [NVIDIA-AI-IOT/trt_pose](https://github.com/NVIDIA-AI-IOT/trt_pose).
 
@@ -60,7 +60,7 @@ export QT_X11_NO_MITSHM=1
 ```
 cd /data
 git clone https://github.com/u0251077/trt_pose_docker.git
-cd trt_pose
+cd trt_pose_docker
 sudo python3 setup.py install
 ```
 ## Run the example
