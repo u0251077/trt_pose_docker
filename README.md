@@ -27,7 +27,10 @@ docker run \
 -it nvcr.io/nvidia/pytorch:20.11-py3 \
 /bin/bash
 ```
-
+- Enable xhost (display docker screen)
+```
+xhost +
+```
 ## start docker & install Dependencies
 0. Start docker 
 
@@ -47,6 +50,10 @@ python setup.py install --plugins
 ```
 pip install tqdm cython pycocotools
 apt-get install python3-matplotlib
+```
+4. fix error about `X Error: BadShmSeg (invalid shared segment parameter) 128`
+```
+export QT_X11_NO_MITSHM=1
 ```
 ## Install trt_pose
 ```
