@@ -22,7 +22,7 @@ docker run \
 --device=/dev/video0:/dev/video0 \
 --gpus all \
 --net host \
--e DISPLAY=:1 \
+-e DISPLAY=$DISPLAY \
 -v {your_folder}:/data \
 --name trtppose \
 -it nvcr.io/nvidia/pytorch:20.11-py3 \
